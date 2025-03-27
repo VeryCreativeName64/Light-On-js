@@ -4,7 +4,7 @@ export default class Info {
         this.megjelenit();
     }
 
-    megjelenit(){
-        
+    megjelenit(SzElem){
+
     }
 }
