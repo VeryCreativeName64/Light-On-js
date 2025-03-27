@@ -5,7 +5,7 @@ export default class Lampa {
   constructor(index, SzElem, allapot) {
     this.#allapot = allapot;
     this.#index = index;
-    this.#lampaElem = lampaElem;
+    this.#lampaElem = SzElem;
     this.SzElem = SzElem;
     this.megjelenit();
     
@@ -16,14 +16,13 @@ export default class Lampa {
       
     });
 
-    esemenykezelok(){
-        window.addEventListener("kivalaszt", (event) => {
-          console.log(event.detail);
-          this.#lista[event.detail] = !this.#lista[event.detail];
-          this.megjelenit(); 
-        });
-    };
-};
- 
+
+
+
+
+    
+
+  }
+}    
   
 
