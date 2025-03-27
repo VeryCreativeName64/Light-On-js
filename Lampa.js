@@ -8,6 +8,7 @@ export default class Lampa {
     this.#lampaElem = lampaElem;
     this.SzElem = SzElem;
     this.megjelenit();
+    
     this.elem = document.querySelector(".elem:last-child");
     this.elem.addEventListener("click", () => {
         const esemeny = new CustomEvent("kivalaszt", { detail: this.#index });
@@ -15,19 +16,14 @@ export default class Lampa {
       
     });
 
-    esemenykezelok() {
+    esemenykezelok(){
         window.addEventListener("kivalaszt", (event) => {
           console.log(event.detail);
           this.#lista[event.detail] = !this.#lista[event.detail];
           this.megjelenit(); 
         });
-    }
-
-
-
-    
-
-  }
-}    
+    };
+};
+ 
   
 
