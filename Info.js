@@ -5,6 +5,6 @@ export default class Info {
     }
 
     megjelenit(SzElem){
-
+        console.log("Info megjelenítése");
     }
 }
