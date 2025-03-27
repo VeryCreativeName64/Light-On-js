@@ -1,4 +1,5 @@
-import Lampa
+import { Lampa } from "./Lampa.js";
+import Info from "./Info";
 
 export default class JatekTer{
     #lista=[0,0,0,0,0,0,0,0,0];
@@ -12,7 +13,7 @@ export default class JatekTer{
 
     megjelenit(){
         for (let index = 0; index < this.#lista.length; index++) {
-            new 
+            new Lampa(this.#lista[index], index, this.SzElem);
             
         }
     }
