@@ -14,5 +14,20 @@ export default class Lampa {
         window.dispatchEvent(esemeny);
       
     });
+
+    esemenykezelok() {
+        window.addEventListener("kivalaszt", (event) => {
+          console.log(event.detail);
+          this.#lista[event.detail] = !this.#lista[event.detail];
+          this.megjelenit(); 
+        });
+    }
+
+
+
+    
+
   }
-}
+}    
+  
+
